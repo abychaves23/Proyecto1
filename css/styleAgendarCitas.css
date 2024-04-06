@@ -1,0 +1,135 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 1000px;
+}
+
+.left-container,
+.right-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+.formulario {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.formulario input[type="date"],
+.formulario input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #7e7e7e;
+    box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(0, 73, 83);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(0, 178, 178);
+}
+
+#especialidad, 
+#medico {
+    padding: 8px 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 179px;
+}
+
+.calendar {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    color: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.days-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.days-table th {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.days-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#prevMonth,
+#nextMonth {
+    margin: 0 5px;
+    padding: 5px 10px; 
+    background-color: rgb(0, 73, 83);
+    color: #fff; 
+    border: none; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+#prevMonth:hover,
+#nextMonth:hover {
+    background-color: #ccc;
+}
+
+#citasAgendadas {
+    padding: 20px;
+    background-color: #D6EBF2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-y: auto; /* Agregar scroll vertical cuando sea necesario */
+    max-height: 300px; /* Altura máxima del div antes de mostrar el scroll */
+}
+
+.cita-agendada {
+    background-color: lightblue;
+    /* Otros estilos opcionales */
+}
+

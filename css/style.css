@@ -1,0 +1,268 @@
+.contenido {
+  display: flex;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.articulos {
+  width: 150%;
+  margin: 0 auto;
+  padding: 20px;
+  border-right: 3px solid #a6a1a1;
+}
+
+.secciones {
+  display: block;
+  font-size: 1.5em;
+}
+
+#seccion1,
+#seccion4 {
+  width: 100%;
+  height: 350px;
+  background-color: #f2f2f2;
+  margin: auto 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+#seccion5 {
+  width: 100%;
+  height: 420px;
+  background-color: #f2f2f2;
+  margin: auto 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+#seccion2 {
+  width: 100%;
+  height: 400px;
+  background-color: #f2f2f2;
+  margin: auto 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+#seccion3 {
+  width: 100%;
+  height: 400px;
+  background-color: #f2f2f2;
+  margin: auto 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+
+.secciones h3 {
+  text-align: center;
+  padding: 20px;
+
+}
+
+.menuSecundario {
+  width: 25%;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.menuSecundario a {
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 10px 20px;
+  background-color: rgba(68, 130, 137, 0.589);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.menuSecundario a:hover {
+  background-color: rgba(68, 130, 137, 0.589);
+}
+
+.contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  display: block;
+  background-color: rgba(68, 130, 137, 0.589);
+  margin-top: 50px;
+}
+
+.contacto h2 {
+  margin-bottom: 30px;
+}
+
+.contacto p {
+  padding: 5px;
+}
+
+.secciones h2 {
+  margin-bottom: 20px;
+}
+
+.secciones p {
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#searchForm {
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#buscar {
+  background-color: rgb(0, 73, 83);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+#criterioBusqueda,
+#criterioOrdenamiento {
+  padding: 8px 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.medico {
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #D6EBF2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.medico p {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.containerResults {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content p {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalReseñas {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #C9D1D4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#paginacion {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#paginacion button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: rgb(0, 73, 83);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contenido1 {
+  width: 300px;
+  margin: 0 auto;
+  margin-left: 370px;
+  margin-top: 20px;
+}
+
+#preguntasFrecuentes {
+  width: 800px;
+  height: 1050px;
+  background-color: #f2f2f2;
+  margin: auto 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border-right: 40px;
+  padding: 20px;
+}
+
+#preguntasFrecuentes p {
+  margin: 20px;
+}

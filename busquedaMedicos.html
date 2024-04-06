@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Médicos</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clinica Árbol de Seda</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Menú</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="inicioSesion.html">Inicio de Sesión / Registro</a></li>
+                        <li><a href="agendarCitas.html">Agendar Cita</a></li>
+                        <li><a href="busquedaMedicos.html">Búsqueda de Médicos</a></li>
+                        <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="informacionContacto.html">Información de Contacto</a></li>
+                        <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="doc/TerminosUsoPrivacidad.pdf" download>Descargar Política de Privacidad y Términos de
+                                Uso</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="containerResults">
+
+        <h1>Búsqueda de Médicos</h1>
+
+        <form id="searchForm">
+
+            <input type="text" id="searchInput" placeholder="Ingresar búsqueda">
+            <button type="submit" id="buscar">Buscar</button>
+
+            <select id="criterioBusqueda" name="criterio" >
+                <option value="" disabled selected>Criterio de búsqueda</option>
+                <option value="nombre">Nombre</option>
+                <option value="especialidad">Especialidad</option>
+                <option value="ubicacion">Ubicación</option>
+                <option value="identificacion">Identificación</option>
+            </select>
+
+            <select id="criterioOrdenamiento" name="criterio">
+                <option value="" disabled selected>Criterio de ordenamiento</option>
+                <option value="nombre">Nombre</option>
+                <option value="especialidad">Especialidad</option>
+                <option value="ubicacion">Ubicación</option>
+                <option value="identificacion">Identificación</option>
+            </select>
+        </form>
+
+        <div id="searchResults"></div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalNombre"></h2>
+                <p>Especialidad: <span id="modalEspecialidad"></span></p>
+                <p>Ubicación: <span id="modalUbicacion"></span></p>
+                <p>Horario: <span id="modalHorario"></span></p>
+                <p>Teléfono: <span id="modalTelefono"></span></p>
+                <p>Correo: <span id="modalCorreo"></span></p>
+                <p>Biografía: <span id="modalBiografia"></span></p>
+                <div id="modalReseñas"></div>
+            </div>
+        </div>
+
+        <div id="paginacion"></div>
+
+    </div>
+
+    <script src="js/guardarMedicos.js"></script>
+    <script src="js/busquedaMedicos.js"></script>
+
+</body>
+
+</html>
